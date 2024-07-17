@@ -1,21 +1,21 @@
-const mongoose = require("mongoose")
-mongoose.connect("mongodb://127.0.0.1:27017/movie_db")
-.then(() => {
-    console.log("connected to db")
-}).catch((err) => {
-    console.log(err)
-})
+// const mongoose = require("mongoose")
+// mongoose.connect("mongodb://127.0.0.1:27017/movie_db")
+// .then(() => {
+//     console.log("connected to db")
+// }).catch((err) => {
+//     console.log(err)
+// })
 
-const movieSchema = new mongoose.Schema({
-    title: String,
-    year: Number,
-    genre: String,
-    score: Number,
-    director: String,
-    rating: Number
-})
+// const movieSchema = new mongoose.Schema({
+//     title: String,
+//     year: Number,
+//     genre: String,
+//     score: Number,
+//     director: String,
+//     rating: Number
+// })
 
-const Movie = mongoose.model("Movie", movieSchema)
+// const Movie = mongoose.model("Movie", movieSchema)
 
 // const movie = new Movie({
 //     title: "The Matrix",
@@ -125,5 +125,5 @@ const Movie = mongoose.model("Movie", movieSchema)
 // Movie.deleteOne({title: 'Avengers: Infinity War'})
 // .then(res => console.log(res))
 
-Movie.findByIdAndDelete('66967526ffa935e0dde53198')
-.then(res => console.log(res))
+// Movie.findByIdAndDelete('66967526ffa935e0dde53198')
+// .then(res => console.log(res))
